@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM nginx:latest
 
 # Create app directory
 WORKDIR /usr/src/app
