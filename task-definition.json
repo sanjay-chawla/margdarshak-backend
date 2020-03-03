@@ -1,10 +1,10 @@
 {
     "family": "ec2-task-definition", 
-    "networkMode": "awsvpc", 
+    "networkMode": "bridge", 
     "containerDefinitions": [
         {
             "name": "margdarshak-backend", 
-            "image": "nginx:latest", 
+            "image": "ubuntu:16.04", 
             "portMappings": [
                 {
                     "containerPort": 80, 
