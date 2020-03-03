@@ -80,3 +80,9 @@ jobs:
         service: margdarshak-backend
         cluster: margdarshak
         wait-for-service-stability: true
+
+    - name: Run created image
+      id: run-docker-image
+      run: |
+        # Run created docker image
+        docker run -p80:3000 -d ${{ steps.build-image.outputs.image }}
