@@ -1,6 +1,5 @@
 {
     "family": "ec2-task-definition", 
-    "networkMode": "bridge", 
     "containerDefinitions": [
         {
             "name": "margdarshak-backend", 
@@ -31,5 +30,6 @@
         "EC2"
     ], 
     "cpu": "256", 
-    "memory": "512"
+    "memory": "512",
+    "networkMode": "bridge"
 }
